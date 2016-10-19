@@ -11,6 +11,7 @@
 define( 'BB_PLUGIN_DIR', plugin_dir_path(__FILE__)  );
 
 // Plugin definitions
+define('BB_PLUGIN_NAME', 'wp-black-ribbon');
 define('BB_SLUG', 'bbblackribbon-id');
 define('BB_OPT_NAME', 'bbblackribbonAdminOptions');
 define('BB_ACTION_ACTIVATE', 'activate_bbblackribbon/bbblackribbon.php');
@@ -84,7 +85,7 @@ if (!class_exists("bbblackribbon")) {
 				}
 			?>
 			'>
-				<img src="<?php echo plugins_url().'images/'.$image); ?>" />
+				<img src="<?php echo plugins_url(BB_PLUGIN_NAME).'/images/'.$image; ?>" />
 			</div>
 			<?php
 		}
